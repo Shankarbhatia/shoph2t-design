@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #111;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* ----card grid css--- */
+
+.card .meta-inner {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.card .tag {
+  color: #fff;
+}
+
+.card .publish-date {
+  color: #ccc;
+  font-weight: 400;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card .meta {
+  padding-top: 12px;
+}
+
+.card .tag {
+  display: inline-block;
+  font-size: 12px;
+  color: #aaa;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.card .meta h3 {
+  font-size: 24px;
+  line-height: 1.4;
+}
+.card .card .meta:hover h3 {
+  color: rgb(103, 102, 102);
+}
+.card .meta-inner .publish-date{
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-left: 6px;
+    color: #a1a1a1;
+}
+.pagination {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.pagination a {
+  display: inline-block;
+  padding: 8px 14px;
+  margin: 0 6px;
+  border: 1px solid #444;
+  font-size: 14px;
+}
+
+.pagination a.active,
+.pagination a:hover {
+  background: #fff;
+  color: #000;
+}
+
+.custom-pt-80{
+padding-top: 80px;
+}
+.text-center{
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+.card .meta h3 {
+    font-size: 15px;
+  }
+}
